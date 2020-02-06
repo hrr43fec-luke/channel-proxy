@@ -1,0 +1,24 @@
+{
+  "name": "andrew-proxy",
+  "version": "1.0.0",
+  "description": "This repo is a clone on Twitch.tv's Recommended Channels module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrr43fec-luke/andrew-proxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrr43fec-luke/andrew-proxy/issues"
+  },
+  "homepage": "https://github.com/hrr43fec-luke/andrew-proxy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
