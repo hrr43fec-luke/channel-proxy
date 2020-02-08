@@ -4,10 +4,13 @@ This repo is a proxy for Twitch.tv combining the modules from the following proj
 ## Related Projects
 **Philip Nguyen** [@nguyephi](https://github.com/nguyephi)  
 * [Video Player](https://github.com/hrr43fec-luke/video-player-service)  
+
 **Kraig Hanson** [@kraig5](https://github.com/kraig5)  
 * [Chats](https://github.com/hrr43fec-luke/chat-service)  
+
 **Priscila Gonzalez** [@priscilagonzalez](https://github.com/priscilagonzalez)  
 * [Video Carousel](https://github.com/hrr43fec-luke/video-carousel-service)  
+
 **Andrew Doolittle** [@azdoolittle](https://github.com/azdoolittle)  
 * [Recommended Channels](https://github.com/hrr43fec-luke/rec-channels-service)  
 
