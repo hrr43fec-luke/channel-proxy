@@ -5,39 +5,39 @@ const port = 3000;
 
 app.use(express.static('client'));
 
-const apis = {
+const hosts = {
   player: 3001,
   chats: 3002,
   carousel: 3003,
   channels: 3004
 };
 
-function handleAPI(type, req, res) {
-  if (type in apis) {
-    return fetch(`http://${req.hostname}:${apis[type]}${req.url}`)
+function handleHosts(type, req, res) {
+  if (type in hosts) {
+    return fetch(`http://${req.hostname}:${hosts[type]}${req.url}`)
       .then((results) => results.json())
       .then((results) => res.send(results));
   };
 }
 
 app.get('/api/player/:Id', (req, res) => {
-  return handleAPI('player', req, res);
+  return handleHosts('player', req, res);
 });
 
 app.get('/api/chats/:videoId', (req, res) => {
-  return handleAPI('chats', req, res);
+  return handleHosts('chats', req, res);
 });
 
 app.get('/videos/:videoId', (req, res) => {
-  return handleAPI('carousel', req, res);
+  return handleHosts('carousel', req, res);
 });
 
 app.get('/filter/:videoId/:categoryId', (req, res) => {
-  return apiHandler('carousel', req, res);
+  return handleHosts('carousel', req, res);
 });
 
 app.get('/api/channels/:videoId', (req, res) => {
-  return handleAPI('channels', req, res);
+  return handleHosts('channels', req, res);
 });
 
 const log = (txt) => {

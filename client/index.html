@@ -6,11 +6,16 @@
 </head>
   <body>
 
-    <div id="video-player"></div>
-    <div style="height:100%" id="chat-service"></div>
-    <div id="carousel"></div>
-    <div id="channel-service"></div>
-
+    <div id="twitchContainer">
+      <div style="display:flex; flex-direction:row">
+        <div id="channel-service"></div>
+        <div style="flex:1;overflow:hidden;display:flex;flex-direction: column;">
+          <div id="video-player-service"></div>
+          <div id="carousel"></div>
+        </div>
+        <div id="chat-service" style="height:100%; color:black"></div>
+      </div>
+    </div>
     <script src='http://localhost:3001/player_bundle.js'></script>
     <script src="http://localhost:3002/ChatService.js"></script>
     <script src="http://localhost:3003/carousel_bundle.js"></script>
